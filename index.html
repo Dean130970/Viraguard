@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Help protect garden birds. Register for 10% off your first ViraGuard feeder and optional 48-hour VIP access to our planned share offer.">
+  <title>ViraGuard Feeders | For the birds we love</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=swap');
+
+    :root {
+      --ink: #243e32;
+      --cream: #f7f6ee;
+      --olive: #7e8860;
+      --line: #cbd2bf;
+      --red: #b3261e;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 85px;
+    }
+
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: "DM Sans", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    button,
+    input {
+      font: inherit;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    h1,
+    h2 {
+      margin: 0 0 25px;
+      font-family: "Libre Caslon Display", Georgia, serif;
+      font-weight: 400;
+      line-height: 1.02;
+      letter-spacing: -2px;
+    }
+
+    h2 {
+      font-size: clamp(42px, 4.6vw, 65px);
+    }
+
+    h3 {
+      font-size: 20px;
+      line-height: 1.3;
+    }
+
+    em {
+      color: var(--olive);
+      font-weight: 400;
+    }
+
+    .eyebrow {
+      margin: 0 0 25px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2.4px;
+    }
+
+    .micro {
+      font-size: 11px;
+      line-height: 1.6;
+      opacity: 0.8;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+      padding: 17px 25px;
+      border: 0;
+      border-radius: 3px;
+      background: var(--ink);
+      color: white;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background: #45634d;
+    }
+
+    .button.small {
+      padding: 12px 18px;
+      font-size: 12px;
+    }
+
+    .text-link {
+      padding-bottom: 4px;
+      border-bottom: 1px solid;
+      font-size: 13px;
+      text-decoration: none;
+    }
+
+    :focus-visible {
+      outline: 3px solid #c48643;
+      outline-offset: 4px;
+    }
+
+    button:disabled {
+      opacity: 0.6;
+      cursor: wait;
+    }
+
+    /* Header */
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      min-height: 170px;
+      padding: 12px 6%;
+      border-bottom: 1px solid #d9ddcf;
+    }
+
+    .company-emblem {
+      display: block;
+      width: 145px;
+      flex: 0 0 145px;
+    }
+
+    .company-emblem img {
+      display: block;
+      width: 100%;
+      height: auto;
+      mix-blend-mode: multiply;
+    }
+
+    nav {
+      display: flex;
+      gap: 32px;
+      font-size: 13px;
+    }
+
+    nav a {
+      text-decoration: none;
+    }
+
+    .header-company {
+      text-align: right;
+    }
+
+    .company-registration {
+      margin: 10px 0 0;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .company-registration strong {
+      display: block;
+      font-size: 16px;
+    }
+
+    .company-registration span {
+      display: block;
+    }
+
+    .company-registration b {
+      white-space: nowrap;
+    }
+
+    /* Opening section */
+
+    .hero {
+      position: relative;
+      min-height: 650px;
+    }
+
+    .hero-copy {
+      width: 50%;
+      padding: 35px 4.5% 25px 6%;
+    }
+
+    .hero-copy > p:not(.eyebrow):not(.intro):not(.micro) {
+      max-width: 430px;
+      font-size: 14px;
+    }
+
+    .hero-copy > .goal {
+      display: block;
+      margin: 0 0 24px;
+      padding: 0 0 16px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .goal .goal-main,
+    .goal .goal-main strong {
+      font: 500 20px/1.35 "DM Sans", Arial, sans-serif;
+    }
+
+    .goal small {
+      display: block;
+      margin-top: 5px;
+      font-size: 12px;
+    }
+
+    .hero-copy > .eyebrow {
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 1.45;
+      letter-spacing: 1.4px;
+    }
+
+    .hero-heading-group {
+      position: relative;
+      min-height: 210px;
+    }
+
+    .hero-heading-group h1 {
+      position: relative;
+      z-index: 1;
+      max-width: none;
+      font-size: clamp(42px, 4.3vw, 62px);
+      pointer-events: none;
+    }
+
+    .hero-heading-group h1 em {
+      display: block;
+      margin-top: 6px;
+    }
+
+    .protect-line {
+      white-space: nowrap;
+    }
+
+    .new-greenfinch {
+      position: absolute;
+      top: -28px;
+      left: 38%;
+      width: 190px;
+      height: 155px;
+      object-fit: contain;
+    }
+
+    .hero .intro {
+      margin: 16px 0;
+      font-size: 20px;
+      line-height: 1.4;
+    }
+
+    .hero-image {
+      position: absolute;
+      inset: 0 0 0 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: #e9ecdf;
+    }
+
+    .hero-image img {
+      display: block;
+      width: 78%;
+      height: 520px;
+      margin-bottom: 100px;
+      object-fit: contain;
+      mix-blend-mode: multiply;
+    }
+
+    .image-note {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 15px 30px 16px;
+      text-align: center;
+    }
+
+    .image-note span {
+      font: 27px Georgia, serif;
+    }
+
+    .image-note p {
+      margin: 8px 0;
+      font-size: 11px;
+    }
+
+    .opening-offers {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin: 23px 0 16px;
+    }
+
+    .opening-offers article {
+      padding-top: 14px;
+      border-top: 2px solid #a6b28e;
+    }
+
+    .opening-offers article:last-child {
+      border-color: #b86a43;
+    }
+
+    .offer-audience {
+      margin: 0 0 10px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.6px;
+    }
+
+    .opening-offers h2 {
+      margin: 0 0 15px;
+      font-family: "DM Sans", Arial, sans-serif;
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 1.3;
+      letter-spacing: -0.5px;
+    }
+
+    .opening-offers a {
+      display: inline-block;
+      font-size: 11px;
+    }
+
+    .offer-rrp {
+      display: block;
+      margin: -5px 0 12px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .opening-offers .seis {
+      display: block;
+      margin: -6px 0 10px;
+      line-height: 1.6;
+    }
+
+    .seis-emphasis {
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+
+    .seis-description {
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .signup-reassurance {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+
+    .signup-note {
+      opacity: 1;
+    }
+
+    /* Videos and product explanation */
+
+    .section {
+      padding: 60px 8%;
+    }
+
+    .section-heading {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 8%;
+      margin-bottom: 30px;
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      font-size: 49px;
+    }
+
+    .section-heading .eyebrow {
+      margin-bottom: 14px;
+    }
+
+    .section-heading > p {
+      font-size: 14px;
+    }
+
+    .media-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .media {
+      height: 320px;
+      overflow: hidden;
+      border-radius: 5px;
+      background: #e5e9de;
+    }
+
+    .media video,
+    .media iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      background: #17271d;
+      object-fit: contain;
+    }
+
+    .video-cover {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      border: 0;
+      cursor: pointer;
+    }
+
+    .video-cover img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .video-cover span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 17px 25px;
+      border-radius: 50%;
+      background: #ffffffed;
+      color: var(--ink);
+      font-size: 28px;
+    }
+
+    .product img {
+      width: 100%;
+      height: 100%;
+      padding: 12px;
+      object-fit: contain;
+      mix-blend-mode: multiply;
+    }
+
+    .media-grid h3 {
+      margin: 18px 0 10px;
+      font: 25px Georgia, serif;
+    }
+
+    .media-grid p {
+      margin: 0;
+      font-size: 12px;
+      line-height: 1.7;
+    }
+
+    .media-grid p.debris-visibility-note {
+      margin: 12px 0 0;
+      color: var(--red);
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    .note {
+      max-width: 900px;
+      margin-top: 22px;
+    }
+
+    /* Robin section */
+
+    .robin-strip {
+      display: grid;
+      grid-template-columns: 1.15fr 1fr;
+      align-items: center;
+      gap: 5%;
+      padding: 45px 8%;
+      background: #e9d9c4;
+    }
+
+    .robin-strip > img {
+      width: 100%;
+      border-radius: 4px;
+    }
+
+    .robin-strip .eyebrow {
+      margin-bottom: 15px;
+    }
+
+    .robin-strip h2 {
+      margin-bottom: 14px;
+      font-size: 43px;
+    }
+
+    .robin-strip p {
+      font-size: 13px;
+    }
+
+    /* Email signup */
+
+    .join {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10%;
+    }
+
+    .join h2 {
+      font-size: 55px;
+    }
+
+    .join > div > p {
+      max-width: 420px;
+    }
+
+    .join p {
+      font-size: 14px;
+    }
+
+    .join .micro {
+      font-size: 10px;
+    }
+
+    .benefit {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      margin: 24px 0;
+    }
+
+    .benefit > strong {
+      min-width: 125px;
+      font: 37px Georgia, serif;
+    }
+
+    .benefit span {
+      font-size: 13px;
+    }
+
+    .benefit .raise-details {
+      display: block;
+      margin-top: 10px;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    form {
+      padding: 38px;
+      border: 1px solid #dce0d3;
+      border-radius: 5px;
+      background: white;
+      box-shadow: 0 15px 40px #243e3207;
+    }
+
+    form h3 {
+      margin: 0;
+      font: 29px/1.2 Georgia, serif;
+    }
+
+    form > p {
+      font-size: 14px;
+    }
+
+    form > label {
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    input[type="email"] {
+      width: 100%;
+      margin: 8px 0 22px;
+      padding: 15px;
+      border: 1px solid #a8b2a4;
+      border-radius: 3px;
+      font: 16px Arial, sans-serif;
+    }
+
+    .check {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 17px;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+    .check input {
+      margin-top: 3px;
+      accent-color: var(--ink);
+    }
+
+    .check small {
+      display: block;
+      opacity: 0.6;
+    }
+
+    form button.button {
+      position: relative;
+      justify-content: center;
+      width: 100%;
+      margin-top: 8px;
+      text-align: center;
+    }
+
+    .button-arrow {
+      position: absolute;
+      right: 25px;
+    }
+
+    .honey {
+      position: absolute;
+      left: -10000px;
+    }
+
+    .status {
+      font-weight: 600;
+    }
+
+    /* Pitch deck and box */
+
+    .deck-invitation {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 7%;
+      margin-bottom: 25px;
+      padding: 35px 8% 55px;
+      background: var(--cream);
+    }
+
+    .box-picture {
+      overflow: hidden;
+      border-radius: 5px;
+      aspect-ratio: 1.57;
+      background: var(--cream);
+    }
+
+    .box-picture img {
+      display: block;
+      width: 100%;
+      height: auto;
+      mix-blend-mode: multiply;
+      clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 50%,
+        82% 50%,
+        0 42%
+      );
+    }
+
+    .deck-invitation h2 {
+      font-size: 44px;
+    }
+
+    .deck-invitation .eyebrow {
+      margin-bottom: 18px;
+    }
+
+    .deck-invitation p:not(.eyebrow) {
+      font-size: 15px;
+    }
+
+    .deck-invitation .button {
+      margin-top: 8px;
+      font-size: 12px;
+    }
+
+    /* Privacy and footer */
+
+    .legal {
+      padding: 0 8% 30px;
+    }
+
+    details {
+      padding: 20px 0;
+      border-bottom: 1px solid #ced5c5;
+    }
+
+    summary {
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    details p {
+      font-size: 11px;
+    }
+
+    footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      padding: 25px 8%;
+      border-top: 1px solid #d4d9cb;
+    }
+
+    .brand {
+      color: var(--ink);
+      font: 29px/1 Georgia, serif;
+      letter-spacing: -1px;
+      text-decoration: none;
+    }
+
+    .brand span {
+      display: block;
+      margin-top: 9px;
+      font: 9px Arial, sans-serif;
+      letter-spacing: 5px;
+      text-align: center;
+    }
+
+    footer p,
+    footer a:not(.brand),
+    footer small {
+      font-size: 11px;
+    }
+
+    /* Tablet */
+
+    @media (min-width: 801px) and (max-width: 1100px) {
+      .new-greenfinch {
+        width: 155px;
+        height: 135px;
+      }
+    }
+
+    /* Mobile */
+
+    @media (max-width: 800px) {
+      header {
+        gap: 14px;
+        min-height: 150px;
+        padding: 12px 5%;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .company-emblem {
+        width: 110px;
+        flex-basis: 110px;
+      }
+
+      .header-company {
+        flex: 1;
+      }
+
+      .header-company .button.small {
+        padding: 11px 12px;
+        font-size: 10px;
+      }
+
+      .company-registration {
+        font-size: 12px;
+        line-height: 1.4;
+      }
+
+      .company-registration strong {
+        margin-bottom: 3px;
+        font-size: 14px;
+      }
+
+      .company-registration b {
+        display: block;
+      }
+
+      .hero-copy {
+        width: 100%;
+        padding: 35px 7%;
+      }
+
+      .hero-copy > .goal {
+        margin-bottom: 20px;
+      }
+
+      .goal .goal-main,
+      .goal .goal-main strong {
+        font-size: 18px;
+      }
+
+      .hero-copy > .eyebrow {
+        font-size: 15px;
+      }
+
+      .hero-heading-group {
+        min-height: 190px;
+      }
+
+      .hero-heading-group h1 {
+        font-size: 49px;
+      }
+
+      .new-greenfinch {
+        top: -25px;
+        left: 43%;
+        width: 165px;
+        height: 140px;
+      }
+
+      .hero-image {
+        position: relative;
+        inset: auto;
+        display: block;
+        margin: 20px 0 24px;
+        padding: 15px 0;
+        background: var(--cream);
+      }
+
+      .hero-image img {
+        width: 100%;
+        height: 330px;
+        margin: 0 auto;
+        object-fit: contain;
+      }
+
+      .image-note {
+        position: static;
+        padding: 12px 0 0;
+      }
+
+      .image-note span {
+        font-size: 23px;
+      }
+
+      .opening-offers {
+        gap: 15px;
+      }
+
+      .opening-offers h2 {
+        font-size: 19px;
+      }
+
+      .opening-offers a {
+        font-size: 10px;
+      }
+
+      .seis-emphasis {
+        font-size: 16px;
+      }
+
+      .seis-description {
+        font-size: 14px;
+      }
+
+      .section {
+        padding: 40px 7%;
+      }
+
+      .section-heading {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .section-heading h2 {
+        font-size: 43px;
+      }
+
+      .media-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .media-grid article {
+        width: 100%;
+        max-width: 500px;
+        margin: auto;
+      }
+
+      .media {
+        height: 340px;
+      }
+
+      .robin-strip {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 35px 7%;
+      }
+
+      .robin-strip h2 {
+        font-size: 42px;
+      }
+
+      .join {
+        grid-template-columns: 1fr;
+        gap: 25px;
+      }
+
+      .join h2 {
+        font-size: 48px;
+      }
+
+      .benefit {
+        gap: 15px;
+      }
+
+      .benefit > strong {
+        min-width: 110px;
+        font-size: 33px;
+      }
+
+      form {
+        padding: 26px;
+      }
+
+      .deck-invitation {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 30px 7%;
+      }
+
+      .deck-invitation h2 {
+        font-size: 40px;
+      }
+
+      footer {
+        flex-wrap: wrap;
+        gap: 25px;
+      }
+
+      .brand {
+        font-size: 25px;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .hero-heading-group h1 {
+        font-size: 43px;
+      }
+
+      .new-greenfinch {
+        width: 135px;
+        height: 120px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a class="company-emblem" href="#" aria-label="ViraGuard Feeders home">
+      <img
+        src="assets/company-emblem.png"
+        alt="ViraGuard Feeders company emblem — Less Debris Means More Finches"
+      >
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a href="#watch">See the difference</a>
+      <a href="#join">Invest in ViraGuard</a>
+    </nav>
+
+    <div class="header-company">
+      <a class="button small" href="#join" data-investor="true">
+        Get VIP share access ↗
+      </a>
+
+      <p class="company-registration">
+        <strong>ViraGuard Feeders Ltd</strong>
+        <span>Company Registration Number: <b>17418337</b></span>
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="goal">
+          <span class="goal-main">
+            <strong>2,000</strong> Email supporters is our goal
+          </span>
+          <small>for a planned Seedrs application.</small>
+        </p>
+
+        <p class="eyebrow">
+          FOR BIRD LOVERS. AND FUTURE SHAREHOLDERS.
+        </p>
+
+        <div class="hero-heading-group">
+          <h1 id="hero-title">
+            Love birds?
+            <em>
+              Help<br>
+              <span class="protect-line">Protect Them.</span>
+            </em>
+          </h1>
+
+          <img
+            class="new-greenfinch"
+            src="assets/greenfinch-cutout.png"
+            alt="Healthy greenfinch perched on a twig"
+          >
+        </div>
+
+        <p class="intro">
+          A feeder with a mission:<br>
+          to fight trichomonosis.
+        </p>
+
+        <div class="hero-image">
+          <img
+            src="assets/feeder.png"
+            alt="Finished feeder design by ViraGuard, with green roof and funnel and a clear collection tub"
+          >
+
+          <div class="image-note">
+            <span>The ViraGuard Feeder</span>
+            <p>Designed by ViraGuard. Created for the birds we love.</p>
+          </div>
+        </div>
+
+        <p>
+          Our feeder collects falling debris, preventing healthy birds
+          from accessing potentially contaminated food, and also deterring
+          rodents by keeping the ground clean.
+        </p>
+
+        <div class="opening-offers">
+          <article>
+            <p class="offer-audience">BIRD LOVERS</p>
+            <h2>Get 10% off<br>your first feeder.</h2>
+            <strong class="offer-rrp">RRP £19.99</strong>
+
+            <a class="text-link" href="#join" data-investor="false">
+              Get my feeder discount ↗
+            </a>
+          </article>
+
+          <article>
+            <p class="offer-audience">INVESTORS</p>
+            <h2>Get 48 hours’<br>VIP access to shares.</h2>
+
+            <span class="seis">
+              <strong class="seis-emphasis">SEIS</strong>
+              <span class="seis-description">Advance Assurance approved</span>
+            </span>
+
+            <a class="text-link" href="#join" data-investor="true">
+              Get my VIP share access ↗
+            </a>
+          </article>
+        </div>
+
+        <p class="micro signup-note">
+          <strong class="signup-reassurance">
+            Sign up free. No commitment.
+          </strong>
+          VIP access applies when our planned share offer opens.
+        </p>
+      </div>
+    </section>
+
+    <section id="watch" class="watch section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">WHY WE’RE DOING THIS</p>
+          <h2>More birds.<br><em>Less discarded food.</em></h2>
+        </div>
+
+        <p>
+          <strong>
+            Trichomonosis is killing finches at an alarming rate.
+          </strong>
+          UK greenfinch numbers have fallen by around 60% since 2005,
+          with trichomonosis driving the decline.
+
+          <a
+            href="https://www.facebook.com/100069909106231/posts/green-finches-were-once-regarded-as-a-common-sighting-in-most-gardens-but-there-/1382697810737176/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Source: Yorkshire Dales Wildlife Rescue ↗
+          </a>
+
+          <br>
+
+          The disease spreads through contaminated food.
+          The RSPB advises against flat feeders and bird tables.
+          Our feeder is designed to collect falling debris.
+
+          <br>
+
+          <a
+            class="text-link"
+            href="https://www.rspb.org.uk/whats-happening/news/how-to-help-garden-birds"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Read the RSPB guidance ↗
+          </a>
+        </p>
+      </div>
+
+      <div class="media-grid">
+        <article>
+          <div class="media">
+            <video
+              controls
+              playsinline
+              preload="metadata"
+              poster="assets/bird-awareness.jpg"
+              aria-label="Garden bird awareness video"
+            >
+              <source src="assets/bird-awareness.mp4" type="video/mp4">
+              Your browser does not support this video.
+            </video>
+          </div>
+
+          <h3>The reason we care</h3>
+          <p>
+            Your garden visitors deserve care. This footage shows a bird
+            suffering from trichomonosis.
+          </p>
+        </article>
+
+        <article>
+          <div class="media">
+            <button
+              id="play-blue-tit"
+              class="video-cover"
+              type="button"
+              aria-label="Play blue tit video"
+            >
+              <img
+                src="assets/blue-tit.png"
+                alt="Blue tit feeding from a ViraGuard prototype"
+              >
+              <span aria-hidden="true">▶</span>
+            </button>
+          </div>
+
+          <h3>See our feeder in action</h3>
+
+          <p>
+            Watch the blue tit clip from our field trials.
+            Look for falling debris at around 12 seconds.
+
+            <a
+              href="https://youtube.com/shorts/EQqRbxBBgNo?is=rwxv3BP3n0F5k1qY"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Watch on YouTube ↗
+            </a>
+          </p>
+
+          <p class="debris-visibility-note">
+            Note: High Pixel Density (a phone screen) may be required
+            to see falling debris.
+          </p>
+        </article>
+
+        <article>
+          <div class="media product">
+            <img
+              src="assets/feeder.png"
+              alt="Production design showing the feeding cage, funnel and clear collection tub"
+            >
+          </div>
+
+          <h3>Feed. Catch. Clear.</h3>
+          <p>
+            The cage holds food. The funnel catches debris.
+            The clear tub collects waste for disposal.
+          </p>
+        </article>
+      </div>
+
+      <p class="micro note">
+        Prototype footage; production design shown separately.
+        Regular cleaning remains essential.
+        RSPB guidance is not a product endorsement.
+      </p>
+    </section>
+
+    <section class="robin-strip">
+      <img
+        src="assets/robins.png"
+        alt="Three photographs of a robin adapting to ViraGuard prototypes"
+        loading="lazy"
+      >
+
+      <div>
+        <p class="eyebrow">THE ROBIN BREAKTHROUGH</p>
+        <h2>Then the robin<br><em>found a way.</em></h2>
+
+        <p>
+          In our trials, robins learnt to balance on the prototype
+          feeder’s funnel rim and feed from the hanging cage.
+          A remarkable moment for our design—and a much-loved garden visitor.
+        </p>
+      </div>
+    </section>
+
+    <section id="join" class="join section">
+      <div>
+        <p class="eyebrow">BECOME PART OF ViraGuard</p>
+        <h2>Back the birds.<br><em>Be first in line.</em></h2>
+
+        <div class="benefit">
+          <strong>48 hours</strong>
+
+          <span>
+            VIP access to the planned share offer before it opens to
+            the wider public.
+
+            <span class="raise-details">
+              Launch Target: £180,000. Capped at £250,000 to protect
+              majority founder ownership.
+            </span>
+          </span>
+        </div>
+
+        <div class="benefit">
+          <strong>10% off</strong>
+          <span>
+            Your first feeder purchase<br>
+            when the product launches.
+          </span>
+        </div>
+
+        <p>
+          Join our 2,000-supporter goal. Receive investment updates and
+          view our official pitch deck. No commitment.
+        </p>
+
+        <p class="micro">
+          <strong class="seis-emphasis">SEIS</strong>
+          <span class="seis-description">Advance Assurance approved.</span>
+          <br>
+          Signup does not reserve shares. Capital at risk.
+        </p>
+
+        <a class="text-link" href="mailto:dean@viraguardfeeders.com">
+          Investor questions? Contact Dean ↗
+        </a>
+      </div>
+
+      <form id="signup-form" method="post">
+        <h3>Get your 10% discount and VIP invitation</h3>
+        <p>48-hour priority access to the planned share offer.</p>
+
+        <label for="email">Your email address</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="you@example.com"
+          autocomplete="email"
+          maxlength="254"
+          required
+        >
+
+        <div class="honey" aria-hidden="true">
+          <input
+            name="website"
+            type="text"
+            tabindex="-1"
+            autocomplete="off"
+            aria-label="Leave this field blank"
+          >
+        </div>
+
+        <label class="check">
+          <input name="consent" type="checkbox" value="yes" required>
+          <span>
+            Send me feeder launch updates and my 10% discount offer.
+          </span>
+        </label>
+
+        <label class="check">
+          <input
+            id="investor"
+            name="investor"
+            type="checkbox"
+            value="yes"
+          >
+          <span>
+            Send me my 48-hour VIP share-access invitation and investment
+            updates.
+            <small>Optional</small>
+          </span>
+        </label>
+
+        <button class="button" type="submit">
+          <span class="submit-label">Register my email</span>
+          <span class="button-arrow" aria-hidden="true">↗</span>
+        </button>
+
+        <p class="status" role="status" aria-live="polite"></p>
+
+        <p class="micro">
+          We’ll use your email for the updates you choose.
+          To unsubscribe or request deletion, email
+          <a href="mailto:dean@viraguardfeeders.com">Dean</a>.
+          Read our <a href="#privacy">privacy &amp; offer details</a>.
+        </p>
+
+        <noscript>
+          <p>
+            Please enable JavaScript to register, or email
+            <a href="mailto:dean@viraguardfeeders.com">
+              dean@viraguardfeeders.com
+            </a>.
+          </p>
+        </noscript>
+      </form>
+    </section>
+
+    <section class="deck-invitation">
+      <div class="box-picture">
+        <img
+          src="assets/packaging.png"
+          alt="ViraGuard Hygienic Feeder retail box shown in the official pitch deck"
+          loading="lazy"
+        >
+      </div>
+
+      <div>
+        <p class="eyebrow">TAKE A CLOSER LOOK</p>
+        <h2>The full story.<br><em>For our subscribers.</em></h2>
+
+        <p>
+          Subscribers will be given access to the product’s official
+          pitch deck.
+        </p>
+
+        <a class="button" href="#join">
+          Subscribe for pitch deck access ↗
+        </a>
+      </div>
+    </section>
+
+    <div class="legal">
+      <details id="privacy">
+        <summary>Privacy &amp; 10% offer details</summary>
+
+        <p>
+          ViraGuard Ltd collects your email address, signup time,
+          consent and optional investor interest to manage this launch
+          list. Signup records are stored through the website’s hosting
+          service. We use consent to send the selected updates;
+          withdraw it at any time by emailing
+          dean@viraguardfeeders.com. You may also request access,
+          correction or deletion there, and may raise a concern with
+          the UK Information Commissioner’s Office. We keep your details
+          while the launch list remains active or until you ask us
+          to remove them.
+        </p>
+
+        <p>
+          The offer is 10% off your first ViraGuard feeder purchase
+          when available. Signup is not an order or a guarantee of a
+          launch date. Redemption instructions will be included in
+          future launch updates; no automated email is sent by this form.
+        </p>
+      </details>
+    </div>
+  </main>
+
+  <footer>
+    <a class="brand" href="#">
+      ViraGuard
+      <span>F E E D E R S</span>
+    </a>
+
+    <p>Less debris. More care. For the birds we love.</p>
+
+    <a href="mailto:dean@viraguardfeeders.com">Contact Dean ↗</a>
+
+    <small>© 2026 ViraGuard Ltd</small>
+  </footer>
+
+  <script>
+    /*
+      EMAIL SIGNUP SETUP
+
+      Replace the empty string below with your form service's POST URL.
+
+      The endpoint must accept FormData and allow submissions from your
+      website. Configure storage, consent fields and any confirmation
+      emails with that provider.
+
+      HTML alone cannot store a mailing list securely.
+
+      Until an endpoint is configured, this form displays a clear
+      message and does not claim that an email has been registered.
+    */
+    const SIGNUP_ENDPOINT = "";
+
+    const form = document.querySelector("#signup-form");
+    const investorCheckbox = document.querySelector("#investor");
+    const statusMessage = form.querySelector(".status");
+    const submitButton = form.querySelector('button[type="submit"]');
+    const submitLabel = form.querySelector(".submit-label");
+
+    // Select the relevant preference when an offer link is clicked.
+    document.querySelectorAll("[data-investor]").forEach(function (link) {
+      link.addEventListener("click", function () {
+        investorCheckbox.checked = link.dataset.investor === "true";
+      });
+    });
+
+    // Load the YouTube player only when the visitor presses play.
+    document.querySelector("#play-blue-tit").addEventListener(
+      "click",
+      function () {
+        const iframe = document.createElement("iframe");
+
+        iframe.src =
+          "https://www.youtube-nocookie.com/embed/EQqRbxBBgNo?autoplay=1";
+        iframe.title = "Blue tit using the ViraGuard prototype";
+        iframe.allow =
+          "autoplay; encrypted-media; picture-in-picture";
+        iframe.allowFullscreen = true;
+
+        this.replaceWith(iframe);
+      }
+    );
+
+    // Submit the email and consent choices to your configured service.
+    form.addEventListener("submit", async function (event) {
+      event.preventDefault();
+
+      if (!form.reportValidity()) {
+        return;
+      }
+
+      if (!SIGNUP_ENDPOINT) {
+        statusMessage.textContent =
+          "Online registration is not connected yet. " +
+          "Please contact dean@viraguardfeeders.com.";
+        return;
+      }
+
+      const formData = new FormData(form);
+
+      // Honeypot field: legitimate visitors leave this empty.
+      if (formData.get("website")) {
+        return;
+      }
+
+      formData.set(
+        "investor",
+        investorCheckbox.checked ? "yes" : "no"
+      );
+
+      submitButton.disabled = true;
+      submitLabel.textContent = "Registering…";
+      statusMessage.textContent = "";
+
+      try {
+        const response = await fetch(SIGNUP_ENDPOINT, {
+          method: "POST",
+          body: formData,
+          headers: {
+            Accept: "application/json"
+          }
+        });
+
+        if (!response.ok) {
+          throw new Error("Registration failed");
+        }
+
+        statusMessage.textContent =
+          "You’re on the list. Thank you for helping us bring " +
+          "ViraGuard to life.";
+
+        form.reset();
+      } catch (error) {
+        statusMessage.textContent =
+          "We could not confirm your registration. Please try again " +
+          "or email dean@viraguardfeeders.com.";
+      } finally {
+        submitButton.disabled = false;
+        submitLabel.textContent = "Register my email";
+      }
+    });
+  </script>
+</body>
+</html>
